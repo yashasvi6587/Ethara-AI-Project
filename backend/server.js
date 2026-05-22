@@ -13,7 +13,15 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// const cors = require('cors');
+
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://ethara-ai-project-5rf4.vercel.app'
+  ],
+  credentials: true
+}));
 
 app.get('/', (req, res) => res.json({ message: 'Team Task Manager API is running' }));
 app.use('/api/auth', authRoutes);
