@@ -16,7 +16,7 @@ Password: Admin1234@#
 ## 👤 Sample Member Credentials
 
 ```
-Email: user2@gmail.com
+Email: user1@gmail.com
 Password: User1234@#
 ```
 
